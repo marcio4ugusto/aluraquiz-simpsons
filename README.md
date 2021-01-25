@@ -1,3 +1,3 @@
 # Imersão React 2 - Alura
 
-## Aluraquiz - Vacinação Corona
+## Alura Quiz - Vacinação Covid-19 Brasil
