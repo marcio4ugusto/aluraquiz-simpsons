@@ -1,6 +1,6 @@
 {
     "bg": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2378&q=80",
-    "title": "Quiz Vacinação Covid-19",
+    "title": "Imersão React II - Alura Quiz - Vacinação Covid",
     "description": "Teste seus conhecimentos sobre a vacinação Covid-19 no Brasil, tire dúvidas e aprenda o que ainda não sabe de uma forma divertida.",
     "questions": [
       {
