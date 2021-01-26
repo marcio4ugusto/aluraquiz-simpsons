@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
 
 import db from '../db.json';
 
+import NameInput from '../src/components/NameInput';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
@@ -22,20 +22,6 @@ export const QuizContainer = styled.div`
 `;
 
 function Home() {
-  const router = useRouter();
-  const [name, setName] = useState('');
-
-  function handleNameInput(e) {
-    console.log(e.target.value);
-    setName(e.target.value);
-  }
-
-  function submit(e) {
-    e.preventDefault();
-    router.push(`/quiz?name=${name}`);
-    console.log('Fazendo uma submissão por meio do react');
-  }
-
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -45,20 +31,7 @@ function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={submit}>
-              <input
-                onChange={handleNameInput}
-                placeholder="Qual o seu nome?"
-              />
-              <button
-                type="submit"
-                disabled={name.length === 0}
-              >
-                Jogar
-                {' '}
-                {name}
-              </button>
-            </form>
+            <NameInput />
           </Widget.Content>
         </Widget>
 
