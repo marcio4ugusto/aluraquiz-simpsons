@@ -1,5 +1,7 @@
+import React from 'react';
 import Head from 'next/head';
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import PropTypes from 'prop-types';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import db from '../db.json';
 
@@ -25,11 +27,11 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-`
+`;
 
-const theme = db.theme;
+const { theme } = db;
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -38,7 +40,7 @@ export default function App({ Component, pageProps }) {
         <title>{db.title}</title>
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={currentURL} key="ogurl" />
+        <meta property="og:url" content="aluraquiz-vacinacao.vercel.app" key="ogurl" />
         <meta property="og:title" content={db.title} key="title" />
         <meta property="og:description" content={db.description} key="ogdesc" />
         <meta property="og:image" content={db.bg} key="ogimage" />
@@ -51,5 +53,12 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
+
+App.propTypes = {
+  Component: PropTypes.func.isRequired,
+  pageProps: PropTypes.element.isRequired,
+};
+
+export default App;

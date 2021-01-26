@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
@@ -43,3 +45,7 @@ export default function Footer(props) {
     </FooterWrapper>
   );
 }
+
+Footer.propTypes = {
+  props: PropTypes.element.isRequired,
+};
