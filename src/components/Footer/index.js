@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
@@ -27,7 +26,7 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-export default function Footer(props) {
+function Footer(props) {
   return (
     <FooterWrapper {...props}>
       <a href="https://www.alura.com.br/">
@@ -46,6 +45,8 @@ export default function Footer(props) {
   );
 }
 
-Footer.propTypes = {
-  props: PropTypes.element.isRequired,
+Footer.defaultProps = {
+  props: undefined,
 };
+
+export default Footer;
