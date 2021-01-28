@@ -1,7 +1,7 @@
 {
-    "bg": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2378&q=80",
-    "title": "Alura Quiz - Vacinação Covid-19 Brasil",
-    "description": "Teste seus conhecimentos sobre a vacinação Covid-19 no Brasil, tire dúvidas e aprenda de uma forma divertida.",
+    "bg": "http://wallpapers-best.com/uploads/posts/2015-09/9_homer_simpson.jpg",
+    "title": "Alura Quiz - Os Simpsons",
+    "description": "Teste seus conhecimentos sobre a maior série de todos os temos.",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -31,14 +31,14 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#7557d4",
-        "secondary": "#4ca6a8",
-        "mainBg": "#e9f4f5",
+        "primary": "#00509d",
+        "secondary": "#fdc500",
+        "mainBg": "#f5f5f5",
         "defaultText": "#f5f5f5",
         "contrastText": "#444444",
         "wrong": "#ee734f",
         "success": "#4CAF50"
       },
-      "borderRadius": "4px"
+      "borderRadius": "3.5px"
     }
   }
