@@ -1,28 +1,196 @@
 {
     "bg": "http://wallpapers-best.com/uploads/posts/2015-09/9_homer_simpson.jpg",
     "title": "Alura Quiz - Os Simpsons",
-    "description": "Teste seus conhecimentos sobre a maior série de todos os temos.",
+    "description": "Teste seus conhecimentos sobre a série.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media.giphy.com/media/l2JdUvDBKWMXdcanS/source.gif",
+        "title": "Quantas temporadas a série de TV tem até o 1o semestre de 2021?",
+        "description": "Está na lista das mais longas séries de TV",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "31",
+          "32",
+          "28",
+          "30"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/xT5LMFiDvePDSZtrtC/source.gif",
+        "title": "Até a 20 temporada, na abertura da série Maggie digita o valor de $847,63. Esse valor faz referência a?",
+        "description": "Essa é só para os atentos",
+        "answer": 2,
+        "alternatives": [
+          "Preço de uma caixa de chupetas",
+          "O salário mínimo norte-americano",
+          "Custo médio de uma babysitter no ano de 1989",
+          "O valor não faz referência a nada"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2Je0hJzZUDil0B2w/source.gif",
+        "title": "Porque as personagens foram criadas com a pele amarela?",
+        "description": "Hoje pode parecer comum, mas na época era algo estranho.",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Para ganharem destaque entre os outros programas da televisão da época",
+          "Era uma crítica à dieta norte-americana, que deixava o cidadão com a aparência amarelada",
+          "Foi algo aleatório, só quiseram brincar com isso"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/LQ34eIy7G0pTxKAfMv/source.gif",
+        "title": "Em Springfield existe um restaurante especializado em frutos do mar, qual o nome desse restaurante?",
+        "description": "Hummm... trocadilho sem graça",
+        "answer": 1,
+        "alternatives": [
+          "Moe's Tavern",
+          "The Frying Dutchman",
+          "The Java Server",
+          "The Singing Sirloin"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2JebAGYgDosDDONy/source.gif",
+        "title": "Em 1990, ‘Do The Bartman‘ ficou em primeiro lugar nas paradas de sucesso do Reino Unido, quem escreveu essa canção?",
+        "description": "Poxa essa é hard!",
+        "answer": 3,
+        "alternatives": [
+          "Lionel Brockman Richie e Diana Ross",
+          "Elton John e George Michael",
+          "Frank Zappa",
+          "Michael Jackson e Bryan Loren"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3o6MbmrVeJsY6yZDos/source.gif",
+        "title": "Quem fundou a cidade de Springfield?",
+        "description": "Facim, facim...",
+        "answer": 2,
+        "alternatives": [
+          "Howard Hughes",
+          "Thomas jefferson",
+          "Jebediah Springfield ",
+          "George Washington"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xT5LMWHruE3m0Me8KI/source.gif",
+        "title": "Na trama, Lisa descobre que Jebediah Springfield é uma fraude, qual era o seu verdadeiro nome e profissão?",
+        "description": "Ops!",
+        "answer": 0,
+        "alternatives": [
+          "Hans Sprungfeld, pirata assassino",
+          "Elizabeth Hoover, freira",
+          "Hans Moleman, físico fugitivo de guerra",
+          "Lionel Hutz, advogado socialista"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3ov9jQX2Ow4bM5xxuM/source.gif",
+        "title": "Springfield fica situada no estado fictício de Takoma. Na série esse estado faz fronteira com quantos outros estados?",
+        "description": "Eita, geografia maluca",
+        "answer": 2,
+        "alternatives": [
+          "2 - Alabama e Mississippi",
+          "3 - Delaware, Maryland e Virgínia",
+          "4 - Ohio, Nevada, Maine e Kentucky"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/c1zviFHCf4pq0/source.gif",
+        "title": "Qual o nome do meio de Homer J. Simpson?",
+        "description": "A letra J.",
+        "answer": 2,
+        "alternatives": [
+          "James",
+          "Julius",
+          "Jay",
+          "Jojo"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/c1zviFHCf4pq0/source.gif",
+        "title": "Ao contrário de Lisa (Lisa Marie Simpson), Bart e Meggie são apelidos. Quais são seus verdadeiros nomes?",
+        "description": "???",
+        "answer": 0,
+        "alternatives": [
+          "Bartholomew Jojo Simpson e Margaret Evelyn Simpson",
+          "Bartolomew Jane Simpson e Margot Owen Simpson",
+          "Bartiolo Simpson e Margaret Stewart Simpson",
+          "Bartherry Angels Simpson e Margot Sonny Simpson"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/vxQbxTQOYOV6U/source.gif",
+        "title": "Eleanor Abernathy é uma personagem também conhecida como?",
+        "description": "Uma personagem diferente",
+        "answer": 3,
+        "alternatives": [
+          "A Cozinheira da escola",
+          "Tia Selma",
+          "Professora do Bart",
+          "A Louca dos gatos"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2JdVWV1XUgbCHkoU/source.gif",
+        "title": "Qual é o partido político de Joe Quimby, prefeito da cidade de Springfield?",
+        "description": "'Um espírito nobre engrandece o menor dos homens'",
+        "answer": 0,
+        "alternatives": [
+          "Democrata",
+          "Republicano",
+          "Independente",
+          "Um bom partido"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3orieSeqdEGWDfmLmg/source.gif",
+        "title": "Na série existe uma boneca infantil criticada por Lisa e muito desejada pelas meninas, qual o nome dessa boneca?",
+        "description": "'Don't you have anything relevant to say?'",
+        "answer": 1,
+        "alternatives": [
+          "Barbarela",
+          "Malibu Stacy",
+          "Sandy",
+          "Lolly Lovely"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/26ybwvTX4DTkwst6U/source.gif",
+        "title": "Qual o nome do autodeclarado inimigo número 1 de Bart Simpson?",
+        "description": "Aquele que trabalhava com Krusty o palhaço",
+        "answer": 3,
+        "alternatives": [
+          "Nelson Muntz",
+          "Milhouse Van Houten",
+          "Jimbo Jones",
+          "Sideshow Bob"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3orifgaoupZHPfyQqA/source.gif",
+        "title": "Aproximadamente quantas personagens existem na trama?",
+        "description": "Bem Espartano essa... Putz!",
+        "answer": 2,
+        "alternatives": [
+          "5 principais e cerca de 100 personagens paralelas",
+          "4 principais e cerca de 500 personagens paralelas",
+          "5 principais e cerca de 300 personagens paralelas",
+          "5 principais e cerca de 700 personagens paralelas"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3orif6OVL03erbPUGY/source.gif",
+        "title": "Quanto tempo um episódio novo da série leva pra ser criado?",
+        "description": "Pra fechar!",
+        "answer": 1,
+        "alternatives": [
+          "De 2 a 4 semnas",
+          "De 6 a 8 meses",
+          "De 4 a 5 meses",
+          "De 15 a 20 dias"
         ]
       }
     ],
@@ -36,8 +204,8 @@
         "mainBg": "#f5f5f5",
         "defaultText": "#f5f5f5",
         "contrastText": "#444444",
-        "wrong": "#ee734f",
-        "success": "#4CAF50"
+        "wrong": "#ef393c",
+        "success": "#12ca92"
       },
       "borderRadius": "3.5px"
     }

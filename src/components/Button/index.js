@@ -20,9 +20,9 @@ const Button = styled.button`
     opacity: .7;
   }
   &:disabled {
-    background-color: #fae588;
-    border-color: #fae588;
-    color: #ffffff;
+    background-color: ${({ theme }) => theme.colors.secondary};
+    border-color: ${({ theme }) => theme.colors.secondary};
+    color: #fdf8e1;
     cursor: not-allowed;
   }
 `;

@@ -33,7 +33,7 @@ function Home() {
             <form onSubmit={submit}>
               <Input
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Qual o seu nome?"
+                placeholder="Digite seu nome?"
                 name="nomeDoUsuario"
                 value={name}
               />
@@ -53,7 +53,29 @@ function Home() {
             <h1>Quizes da Galera</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>lorem ipsum dolor sit amet...</p>
+            <ul>
+              <li>
+                <a href="https://disgust-quiz.arrivabeni.vercel.app/" target="_blank">
+                  Disgust Quiz | por
+                  {' '}
+                  <em>@arrivabeni</em>
+                </a>
+              </li>
+              <li>
+                <a href="https://aluraquiz-base.jojoreoli.vercel.app/" target="_blank">
+                  The Monica's Gang | por
+                  {' '}
+                  <em>@jojoreoli</em>
+                </a>
+              </li>
+              <li>
+                <a href="https://aluraquiz-joaomeidson.vercel.app/" target="_blank">
+                  NerdCast | por
+                  {' '}
+                  <em>@JoaoMeidsonNeri</em>
+                </a>
+              </li>
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
