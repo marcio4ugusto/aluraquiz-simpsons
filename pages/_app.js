@@ -36,14 +36,22 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content={db.description} />
         <title>{db.title}</title>
 
+        <meta name="title" content="Alura Quiz - Os Simpsons" />
+        <meta name="description" content={db.description} />
+
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="aluraquiz-vacinacao.vercel.app" key="ogurl" />
-        <meta property="og:title" content={db.title} key="title" />
-        <meta property="og:description" content={db.description} key="ogdesc" />
-        <meta property="og:image" content={db.bg} key="ogimage" />
+        <meta property="og:url" content="https://aluraquiz-simpsons.vercel.app/" />
+        <meta property="og:title" content="Alura Quiz - Os Simpsons" />
+        <meta property="og:description" content="Teste seus conhecimentos sobre a série!" />
+        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://aluraquiz-simpsons.vercel.app/" />
+        <meta property="twitter:title" content="Alura Quiz - Os Simpsons" />
+        <meta property="twitter:description" content="Teste seus conhecimentos sobre a série!" />
+        <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
