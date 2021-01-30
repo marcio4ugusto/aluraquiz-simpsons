@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Lottie } from '@crello/react-lottie';
+import Link from 'next/link';
 
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
@@ -9,37 +10,50 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
+import finishAnimation from './animations/finish.json';
 
 function ResultWidget({ results }) {
   return (
     <Widget>
-      <Widget.Header>
-        <h3>
-          Tela de Resultado:
-        </h3>
-      </Widget.Header>
+      <Lottie
+        width="120px"
+        height="120px"
+        className="lottie-container basic"
+        style={{ marginTop: '15px', marginRight: 'auto', marginLeft: 'auto' }}
+        config={{ animationData: finishAnimation, loop: true, autoplay: true }}
+      />
+
+      <h3
+        style={{ fontSize: '1.2rem', color: '#444444', paddingLeft: '30px' }}
+      >
+        Resultado:
+      </h3>
 
       <Widget.Content>
-        <p>
-          Você acertou
-          {' '}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              #
+              Questão
+              {' '}
               {index + 1}
               {' '}
-              Resultado:
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? 'Certo'
+                : 'Errado'}
             </li>
           ))}
+          <hr />
+          <li>
+            <strong>
+              Total
+              {' '}
+              {results.filter((x) => x).length}
+              {' '}
+              questões corretas
+            </strong>
+          </li>
         </ul>
+        <Button type="button" onClick={() => window.location.href = '/'}>Reset</Button>
       </Widget.Content>
     </Widget>
   );
@@ -157,7 +171,7 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-function randomQuestions(questionsSource, n = 5) {
+function randomQuestions(questionsSource, n = 2) {
   return questionsSource.sort(() => Math.random() - Math.random()).slice(0, n);
 }
 
