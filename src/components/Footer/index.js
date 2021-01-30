@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
   color: ${({ theme }) => theme.colors.defaultText};
-  background-color: #00000070;
+  background-color: #00000050;
+  font-size: .9rem;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -14,6 +15,7 @@ const FooterWrapper = styled.footer`
   }
   a {
     color: ${({ theme }) => theme.colors.defaultText};
+    line-height: 1.2rem;
     text-decoration: none;
     transition: .3s;
     &:hover,

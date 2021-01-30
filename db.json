@@ -1,5 +1,5 @@
 {
-    "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FbbqNn7H.jpg&f=1&nofb=1",
+    "bg": "/background.jpg",
     "title": "Alura Quiz - Os Simpsons",
     "description": "Teste seus conhecimentos sobre a série.",
     "questions": [
@@ -195,13 +195,16 @@
       }
     ],
     "external": [
-      ""
+      "https://disgust-quiz.arrivabeni.vercel.app/",
+      "https://aluraquiz-base.jojoreoli.vercel.app/",
+      "https://aluraquiz-joaomeidson.vercel.app/"
     ],
     "theme": {
       "colors": {
         "primary": "#00509d",
         "secondary": "#fdc500",
         "mainBg": "#f5f5f5",
+        "alternativeBg": "#00afda",
         "defaultText": "#f5f5f5",
         "contrastText": "#444444",
         "wrong": "#ef393c",

@@ -2,20 +2,22 @@ import styled from 'styled-components';
 
 const QuizBackground = styled.div`
   width: 100%;
-  background-size: cover;
-  background-position: 220px top;
+  background-size: 520px;
+  background-position: 55% top;
   background-image: url(${({ backgroundImage }) => backgroundImage});
-  background-color: ${({ theme }) => theme.colors.mainBg};
+  background-color: ${({ theme }) => theme.colors.alternativeBg};
+  background-repeat: no-repeat;
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: none;
     &:after {
       content: "";
-      background-size: cover;
-    background-position: center;
+      background-size: 320px;
+      background-position: right top;
       background-image:
-        linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}),
+        linear-gradient(transparent, ${({ theme }) => theme.colors.alternativeBg}),
         url(${({ backgroundImage }) => backgroundImage});
+        background-repeat: no-repeat;
       display: block;
       width: 100%;
       height: 210px;
