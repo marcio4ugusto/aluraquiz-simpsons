@@ -8,7 +8,7 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.contrastText};
   border-radius: 3.5px;
-  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;

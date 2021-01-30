@@ -4,14 +4,18 @@ import styled from 'styled-components';
 
 export const InputBase = styled.input`
   width: 100%;
-  padding: 14px;
+  padding: 0 7px 7px;
   margin-bottom: 15px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: none;
+  border-bottom: 1.7px solid #00afda;
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.mainBg};
-  border-radius: 3.5px;
-  font-size: 14px;
+  // border-radius: 3.5px;
+  font-size: 1rem;
   outline: 0;
+  &:focus {
+    box-shadow: 0 2px 0 0 #CCCCCC;
+  }
 `;
 
 function Input({ onChange, placeholder, ...props }) {

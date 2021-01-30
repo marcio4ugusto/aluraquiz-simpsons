@@ -29,13 +29,9 @@ function Home() {
         <QuizLogo />
         <Widget
           as={motion.section}
-          transition={{ delay: 0, duration: 0.5 }}
-          variants={{
-            show: { opacity: 1, y: '0' },
-            hidden: { opacity: 0, y: '100%' },
-          }}
-          initial="hidden"
-          animate="show"
+          transition={{ delay: 0, duration: 0.22 }}
+          initial={{ scale: 25 }}
+          animate={{ scale: 1 }}
         >
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -44,16 +40,16 @@ function Home() {
             <form onSubmit={submit}>
               <Input
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Digite seu nome?"
+                placeholder="Digite seu nome para jogar.."
                 name="nomeDoUsuario"
                 value={name}
+                autofocus="true"
               />
               <Button
                 type="submit"
                 disabled={name.length === 0}
               >
-                {' '}
-                {`Jogar ${name}`}
+                Jogar
               </Button>
             </form>
           </Widget.Content>
@@ -61,7 +57,7 @@ function Home() {
 
         <Widget
           as={motion.section}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ delay: 0.22, duration: 0.1 }}
           variants={{
             show: { opacity: 1 },
             hidden: { opacity: 0 },
@@ -95,7 +91,16 @@ function Home() {
             </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.section}
+          transition={{ delay: 0.22, duration: 0.2 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/marcio-bernardes/aluraquiz-simpsons" />
     </QuizBackground>
