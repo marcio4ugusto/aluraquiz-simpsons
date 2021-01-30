@@ -6,6 +6,7 @@ export const InputBase = styled.input`
   width: 100%;
   padding: 0 7px 7px;
   margin-bottom: 15px;
+  margin-top: 15px;
   border: none;
   border-bottom: 1.7px solid #00afda;
   color: ${({ theme }) => theme.colors.contrastText};

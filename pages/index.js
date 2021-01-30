@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 
 import db from '../db.json';
 
+import InputLevel from '../src/components/InputLevel';
 import Link from '../src/components/Link';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -17,10 +18,11 @@ import Button from '../src/components/Button';
 function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
+  const [isLevelHard, setIsLevelHard] = useState(false);
 
   function submit(e) {
     e.preventDefault();
-    router.push(`/quiz?name=${name}`);
+    router.push(`/quiz?name=${name}&hard=${isLevelHard}`);
   }
 
   return (
@@ -51,6 +53,20 @@ function Home() {
               >
                 Jogar
               </Button>
+            </form>
+
+            <form style={{ marginTop: '16px' }}>
+              <InputLevel>
+                <input
+                  name="isGoing"
+                  type="checkbox"
+                  checked={isLevelHard}
+                  onChange={(e) => setIsLevelHard(e.target.checked)}
+                />
+                <InputLevel.Text>
+                  Habilitar level hard
+                </InputLevel.Text>
+              </InputLevel>
             </form>
           </Widget.Content>
         </Widget>

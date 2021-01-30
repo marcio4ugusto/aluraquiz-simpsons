@@ -12,7 +12,7 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
 import finishAnimation from './animations/finish.json';
 
-function ResultWidget({ results }) {
+function ResultWidget({ results, player }) {
   return (
     <Widget>
       <Lottie
@@ -26,7 +26,8 @@ function ResultWidget({ results }) {
       <h3
         style={{ fontSize: '1.2rem', color: '#444444', paddingLeft: '30px' }}
       >
-        Resultado:
+        {player}
+        , veja seu resultado:
       </h3>
 
       <Widget.Content>
@@ -45,9 +46,12 @@ function ResultWidget({ results }) {
           <hr />
           <li>
             <strong>
-              Total
               {' '}
               {results.filter((x) => x).length}
+              {' '}
+              em
+              {' '}
+              {results.length}
               {' '}
               questões corretas
             </strong>
@@ -171,17 +175,18 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-function randomQuestions(questionsSource, n = 2) {
+function randomQuestions(questionsSource, n = 5) {
   return questionsSource.sort(() => Math.random() - Math.random()).slice(0, n);
 }
 
-function QuizPage({ externalQuestions, externalBg }) {
+function QuizPage({
+  externalQuestions, externalBg, playerName, isHard,
+}) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const questionsToPlay = randomQuestions(externalQuestions);
+  const questionsToPlay = isHard === 'true' ? externalQuestions : randomQuestions(externalQuestions);
   const questionIndex = currentQuestion;
-  // const question = externalQuestions[questionIndex];
   const question = questionsToPlay[questionIndex];
   const totalQuestions = questionsToPlay.length;
   const bg = externalBg;
@@ -220,7 +225,8 @@ function QuizPage({ externalQuestions, externalBg }) {
         )}
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        {screenState === screenStates.RESULT
+          && (<ResultWidget results={results} player={playerName} />)}
       </QuizContainer>
     </QuizBackground>
   );
