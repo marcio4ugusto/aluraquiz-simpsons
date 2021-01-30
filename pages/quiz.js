@@ -10,6 +10,10 @@ import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
 
+function randomQuestions(n = 5) {
+  return db.questions.sort(() => Math.random() - Math.random()).slice(0, n);
+}
+
 function ResultWidget({ results }) {
   return (
     <Widget>
@@ -105,13 +109,13 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 500);
+            }, 3 * 300);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
-            const isSelected = selectedAlternative === alternativeIndex;
+            const isSelected = selectedAlternative === alternativeIndex || '';
 
             return (
               <Widget.Topic
@@ -152,10 +156,10 @@ const screenStates = {
 function Quiz() {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
-  const totalQuestions = db.questions.length;
+  const totalQuestions = randomQuestions().length;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = randomQuestions()[questionIndex];
 
   function addResult(result) {
     setResults([...results, result]);
