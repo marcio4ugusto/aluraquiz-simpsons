@@ -10,7 +10,6 @@ export const InputBase = styled.input`
   border-bottom: 1.7px solid #00afda;
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.mainBg};
-  // border-radius: 3.5px;
   font-size: 1rem;
   outline: 0;
   &:focus {

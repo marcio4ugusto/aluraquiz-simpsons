@@ -43,7 +43,7 @@ function Home() {
                 placeholder="Digite seu nome para jogar.."
                 name="nomeDoUsuario"
                 value={name}
-                autofocus="true"
+                autoFocus="true"
               />
               <Button
                 type="submit"
@@ -81,7 +81,8 @@ function Home() {
                   <li key={linkExterno}>
                     <Widget.Topic
                       as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
+                      href={name.length === 0 ? '/' : `/quiz/${projectName}___${githubUser}`}
+                      isDisabled={name.length === 0}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
